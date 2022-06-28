@@ -1,7 +1,7 @@
 n=int(input())
-a=n**(1/2)
-#print(a)
-if int(a)*a==n:
-    print("True")
+for i in range(1,int(n**0.5)+1):
+    if i*i==n:
+        print('True')
+        break
 else:
-    print("False")
+    print('False')
