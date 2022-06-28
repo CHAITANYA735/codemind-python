@@ -1,17 +1,18 @@
-def is_prime(l):
-    if l==1:
+def is_prime(n):
+    if n==0 or n==1:
         return 0
-    for i in range(2,int(l**0.5)+1):
-        if l%i==0:
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
             return 0
-    return 1
+    else:
+        return 1
 a=int(input())
 b=int(input())
+k=a+b+1
 c=a+b
-i=1
 while 1:
-    if is_prime(c+i):
-        t=c+i
+    if is_prime(k):
+        z=k
         break
-    i+=1
-print(t-c)
+    k=k+1
+print(abs(c-z))
