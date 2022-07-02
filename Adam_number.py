@@ -1,19 +1,18 @@
-n=int(input())##12
-m=n*n##144
-temp=n
-r=0
-while n>0:
-    d=n%10
-    r=r*10+d
+n=int(input())
+m=n*n#
+t1=n
+r1=0 #
+while n!=0:
+    re1=n%10
+    r1=r1*10 + re1
     n=n//10
-k=r*r##441
-org=k
-r1=0
-while k>0:
-    rem=k%10
-    r1=r1*10+rem
-    k=k//10
-if r1==m:
-    print('True')
+b=r1*r1
+r2=0
+while b!=0:
+    re2=b%10
+    r2=r2*10 +re2
+    b=b//10
+if m==r2:
+    print("True")
 else:
-    print('False')
+    print("False")
