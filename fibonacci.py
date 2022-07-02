@@ -1,10 +1,14 @@
-def fib(i):
-    if i==0:
-        return 0
-    elif i==1:
-        return 1
+def fib(l):
+    a,b=0,1
+    if l==1:
+        print(a)
+    elif l==2:
+        print(a,b)
     else:
-        return fib(i-1)+fib(i-2)
+        print(a,b,end=' ')
+        for i in range(2,l):
+            c=a+b
+            print(c,end=' ')
+            b,a=c,b
 n=int(input())
-for i in range(0,n):
-    print(fib(i),end=' ')
+fib(n)
